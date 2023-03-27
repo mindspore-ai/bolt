@@ -17,4 +17,6 @@ set_c_cxx_flags()
 include_blas_enhance()
 
 add_subdirectory(src)
-add_subdirectory(tests)
+if (BUILD_TEST)
+    add_subdirectory(tests)
+endif ()

@@ -17,4 +17,6 @@ set_c_cxx_flags()
 include_tensor()
 
 add_subdirectory(src)
-add_subdirectory(tests)
+if (BUILD_TEST)
+    add_subdirectory(tests)
+endif ()
